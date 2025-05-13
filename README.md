@@ -32,7 +32,57 @@ To create a production version of your app:
 ```bash
 npm run build
 ```
+🔹 1. Add Setup Instructions to Your README
 
+You should clearly explain how others can run the app locally:
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Benard-ICT/family-legacy-app.git
+cd family-legacy-app
+
+2. Install Dependencies
+
+npm install
+
+3. Add Supabase Environment Variables
+
+Create a .env file in the root directory and add:
+
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-anon-key
+
+(Replace with your actual Supabase credentials)
+4. Start the Development Server
+
+npm run dev
+
+The app will run at http://localhost:5173
+
+
+---
+
+### 🔹 2. **Create a `.env.example` File**
+Add a safe sample file like:
+
+```env
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
+
+This helps others know which environment variables they need without exposing real keys.
+🔹 3. Deploy the App (Optional)
+
+If you want others to test it without installing:
+
+    Use platforms like:
+
+        Vercel
+
+        Netlify
+
+        Render
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
